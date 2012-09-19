@@ -3,7 +3,6 @@ package Dancer::Config::Object;
 use strict;
 use warnings;
 
-use parent 'Exporter';
 use Carp 'croak';
 use Dancer::Exception qw(:all);
 use Scalar::Util 'blessed';
@@ -12,6 +11,7 @@ register_exception('BadConfigMethod',
     message_pattern =>
       qq{Can't locate config attribute "%s".\nAvailable attributes: %s});
 
+use parent 'Exporter';
 our @EXPORT_OK = qw(hashref_to_object);
 
 {

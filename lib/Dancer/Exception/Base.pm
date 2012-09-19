@@ -4,8 +4,6 @@ use strict;
 use warnings;
 use Carp;
 
-use parent 'Exporter';
-
 use Dancer::Exception;
 
 use overload '""' => sub {
