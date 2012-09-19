@@ -3,7 +3,7 @@ package TestUtils;
 use File::Path qw(mkpath rmtree);
 use Dancer::Request;
 
-use parent 'Exporter';
+use Exporter 'import';
 our @EXPORT =
   qw(http_request write_file clean_tmp_files);
 

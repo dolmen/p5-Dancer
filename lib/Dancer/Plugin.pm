@@ -8,7 +8,7 @@ use Dancer::Hook;
 use Dancer::Factory::Hook;
 use Dancer::Exception qw(:all);
 
-use parent 'Exporter';
+use Exporter 'import';
 our @EXPORT = qw(
   add_hook
   register

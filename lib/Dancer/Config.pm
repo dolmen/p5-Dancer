@@ -13,7 +13,7 @@ use Dancer::Exception qw(:all);
 
 use Encode;
 
-use parent 'Exporter';
+use Exporter 'import';
 our @EXPORT_OK = qw(setting);
 
 my $SETTINGS = {};

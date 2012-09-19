@@ -11,7 +11,7 @@ register_exception('BadConfigMethod',
     message_pattern =>
       qq{Can't locate config attribute "%s".\nAvailable attributes: %s});
 
-use parent 'Exporter';
+use Exporter 'import';
 our @EXPORT_OK = qw(hashref_to_object);
 
 {

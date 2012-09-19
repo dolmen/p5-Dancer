@@ -56,6 +56,7 @@ WriteMakefile1(
         'Encode'         => '0',
         'Time::HiRes'    => '0', # in core since 5.7
 	'parent'         => '0.223', # dual, in core since 5.10.1
+        'Exporter'       => '5.57', # 5.57 appeared in 5.8.3
     },
 
     test      => {TESTS => join( ' ', (glob( 't/*.t'), glob('t/*/*.t')))},

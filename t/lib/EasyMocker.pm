@@ -4,7 +4,7 @@ package EasyMocker;
 use strict;
 use warnings;
 
-use parent 'Exporter';
+use Exporter 'import';
 our @EXPORT = qw(mock should method);
 
 # syntax:

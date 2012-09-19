@@ -9,7 +9,7 @@ our $Verbose = 0;
 
 use Dancer::Exception::Base;
 
-use parent 'Exporter';
+use Exporter 'import';
 our @EXPORT_OK = (qw(try catch continuation register_exception registered_exceptions raise));
 our %EXPORT_TAGS = ( all => \@EXPORT_OK );
 

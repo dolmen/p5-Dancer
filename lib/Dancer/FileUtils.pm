@@ -10,7 +10,7 @@ use Cwd 'realpath';
 
 use Dancer::Exception qw(:all);
 
-use parent 'Exporter';
+use Exporter 'import';
 our @EXPORT_OK = qw(
     dirname open_file path read_file_content read_glob_content
     path_or_empty set_file_mode normalize_path
