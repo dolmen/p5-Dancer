@@ -23,9 +23,7 @@ use Dancer::Config;
 use Dancer::FileUtils qw(open_file);
 
 use parent 'Exporter';
-use vars '@EXPORT';
-
-@EXPORT = qw(
+our @EXPORT = qw(
   route_exists
   route_doesnt_exist
 

@@ -3,16 +3,13 @@ use strict;
 use warnings;
 use Carp;
 
-use parent 'Exporter';
 use Dancer::Config 'setting';
 use Dancer::Hook;
 use Dancer::Factory::Hook;
 use Dancer::Exception qw(:all);
 
 use parent 'Exporter';
-use vars qw(@EXPORT);
-
-@EXPORT = qw(
+our @EXPORT = qw(
   add_hook
   register
   register_plugin

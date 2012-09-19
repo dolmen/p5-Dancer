@@ -6,13 +6,12 @@ use Carp;
 
 use parent 'Dancer::Object';
 
-use vars '$VERSION';
-
 use Dancer::Config 'setting';
 use Dancer::Error;
 use Dancer::Exception qw(:all);
 
-$VERSION = '0.01';
+our $VERSION = '0.01';
+
 Dancer::Route::Cache->attributes('size_limit', 'path_limit');
 
 # static

@@ -1,7 +1,6 @@
 use Test::More import => ['!pass'];
 use strict;
 use warnings;
-use vars '@ARGV';
 
 use Dancer::GetOpt;
 use Dancer;

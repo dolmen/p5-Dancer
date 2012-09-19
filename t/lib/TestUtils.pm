@@ -1,12 +1,10 @@
 package TestUtils;
 
-use parent 'Exporter';
-use vars '@EXPORT';
-
 use File::Path qw(mkpath rmtree);
 use Dancer::Request;
 
-@EXPORT =
+use parent 'Exporter';
+our @EXPORT =
   qw(http_request write_file clean_tmp_files);
 
 sub http_request {

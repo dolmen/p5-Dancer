@@ -2,8 +2,6 @@ package Dancer::Config;
 
 use strict;
 use warnings;
-use parent 'Exporter';
-use vars '@EXPORT_OK';
 
 use Dancer::Config::Object 'hashref_to_object';
 use Dancer::Deprecation;
@@ -15,7 +13,8 @@ use Dancer::Exception qw(:all);
 
 use Encode;
 
-@EXPORT_OK = qw(setting);
+use parent 'Exporter';
+our @EXPORT_OK = qw(setting);
 
 my $SETTINGS = {};
 

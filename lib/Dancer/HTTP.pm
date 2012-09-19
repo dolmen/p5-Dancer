@@ -2,8 +2,6 @@ package Dancer::HTTP;
 
 use strict;
 use warnings;
-use parent 'Exporter';
-use vars '@EXPORT_OK';
 
 my $HTTP_CODES = {
 

@@ -4,10 +4,8 @@ package EasyMocker;
 use strict;
 use warnings;
 
-use vars qw(@EXPORT);
 use parent 'Exporter';
-
-@EXPORT = qw(mock should method);
+our @EXPORT = qw(mock should method);
 
 # syntax:
 # use t::lib::EasyMocker;
